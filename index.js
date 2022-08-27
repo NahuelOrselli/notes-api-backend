@@ -117,7 +117,7 @@ app.delete('/api/notes/:id', (request,response)=>{
 })
 
 
-const PORT = 3001
+const PORT = process.env.PORT || 3001
 
 // Levantar servidor en Express
 app.listen(PORT,()=>{
